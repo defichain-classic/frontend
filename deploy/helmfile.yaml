@@ -63,7 +63,7 @@ releases:
     - values/review-l2/values.yaml.gotmpl
     - global:
         env: "review"
-  # Deploy review
+  # Deploy review 
   - name: reg-secret
     chart: bedag/raw
     namespace: review-{{ requiredEnv "GITHUB_REF_NAME_SLUG" }}
