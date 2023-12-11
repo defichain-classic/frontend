@@ -49,13 +49,9 @@ COPY . .
 
 # Generate .env.registry with ENVs list and save build args into .env file
 COPY --chmod=+x ./deploy/scripts/collect_envs.sh ./
-RUN ./collect_envs.sh ./docs/ENVS.md
+RUN bash ./collect_envs.sh ./docs/ENVS.md
 
-# Next.js collects completely anonymous telemetry data about general usage.
-# Learn more here: https://nextjs.org/telemetry
-# Uncomment the following line in case you want to disable telemetry during the build.
-# ENV NEXT_TELEMETRY_DISABLED 1
-
+ENV NEXT_TELEMETRY_DISABLED 1
 # Build app for production
 RUN yarn build
 
