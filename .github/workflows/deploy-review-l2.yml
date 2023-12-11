@@ -22,13 +22,13 @@ jobs:
     needs: make_slug
     uses: './.github/workflows/publish-image.yml'
     with:
-        tags: ghcr.io/blockscout/frontend:review-${{ needs.make_slug.outputs.REF_SLUG }}
+        tags: ghcr.io/defichain-classic/frontend:review-${{ needs.make_slug.outputs.REF_SLUG }}
     secrets: inherit
 
   deploy_review_l2:
     name: Deploy frontend (L2)
     needs: [ make_slug, publish_image ]
-    uses: blockscout/blockscout-ci-cd/.github/workflows/deploy_helmfile.yaml@master
+    uses: defichain-classic/blockscout-ci-cd/.github/workflows/deploy_helmfile.yaml@master
     with:
       appName: review-l2-${{ needs.make_slug.outputs.REF_SLUG }}
       globalEnv: review

@@ -46,5 +46,5 @@ jobs:
   test:
     name: Run tests
     needs: deploy_e2e
-    uses: blockscout/blockscout-ci-cd/.github/workflows/e2e_new.yaml@master
+    uses: defichain-classic/blockscout-ci-cd/.github/workflows/e2e_new.yaml@master
     secrets: inherit

@@ -18,7 +18,7 @@ jobs:
   deploy_main:
     name: Deploy frontend
     needs: publish_image
-    uses: blockscout/blockscout-ci-cd/.github/workflows/deploy_helmfile.yaml@master
+    uses: defichain-classic/blockscout-ci-cd/.github/workflows/deploy_helmfile.yaml@master
     with:
       appName: front
       globalEnv: main
@@ -30,7 +30,7 @@ jobs:
   deploy_l2:
     name: Deploy frontend (L2)
     needs: publish_image
-    uses: blockscout/blockscout-ci-cd/.github/workflows/deploy_helmfile.yaml@master
+    uses: defichain-classic/blockscout-ci-cd/.github/workflows/deploy_helmfile.yaml@master
     with:
       appName: l2-optimism-goerli
       globalEnv: optimism-goerli
