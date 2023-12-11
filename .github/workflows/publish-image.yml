@@ -13,7 +13,6 @@ on:
                 description: Image tags
                 required: false
                 type: string
-
 jobs:
     run:
         name: Run
