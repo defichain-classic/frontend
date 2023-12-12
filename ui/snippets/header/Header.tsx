@@ -47,7 +47,6 @@ const Header = ({ isHomePage, renderSearchBar }: Props) => {
         { searchBar }
       </Box>
       <Box display={{ base: 'none', lg: 'block' }}>
-        { (
           <HStack
             as="header"
             width="100%"
@@ -60,7 +59,6 @@ const Header = ({ isHomePage, renderSearchBar }: Props) => {
             </Box>
             { config.features.account.isEnabled && <ProfileMenuDesktop/> }
           </HStack>
-        ) }
       </Box>
     </>
   );
