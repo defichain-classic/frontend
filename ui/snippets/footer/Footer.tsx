@@ -45,12 +45,6 @@ const Footer = () => {
       url: issueUrl,
     },
     {
-      icon: cannyIcon,
-      iconSize: '20px',
-      text: 'Feature request',
-      url: 'https://blockscout.canny.io/feature-requests',
-    },
-    {
       icon: gitIcon,
       iconSize: '18px',
       text: 'Contribute',
@@ -60,25 +54,13 @@ const Footer = () => {
       icon: twitterIcon,
       iconSize: '18px',
       text: 'Twitter',
-      url: 'https://www.twitter.com/blockscoutcom',
+      url: 'https://www.twitter.com/defichainclassic',
     },
     {
       icon: discordIcon,
       iconSize: '24px',
       text: 'Discord',
-      url: 'https://discord.gg/blockscout',
-    },
-    {
-      icon: discussionsIcon,
-      iconSize: '20px',
-      text: 'Discussions',
-      url: 'https://github.com/orgs/defichain-classic/discussions',
-    },
-    {
-      icon: donateIcon,
-      iconSize: '20px',
-      text: 'Donate',
-      url: 'https://github.com/sponsors/blockscout',
+      url: 'https://discord.gg/defichainclassic',
     },
   ];
 
@@ -122,10 +104,10 @@ const Footer = () => {
           <NetworkAddToWallet/>
         </Flex>
         <Box mt={{ base: 5, lg: '44px' }}>
-          <Link fontSize="xs" href="https://www.blockscout.com">blockscout.com</Link>
+          <Link fontSize="xs" href="https://defichain-classic.com">defichain-classic.com</Link>
         </Box>
         <Text mt={ 3 } maxW={{ base: 'unset', lg: '470px' }} fontSize="xs">
-            Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.
+            This is a community driven explorer for inspecting and analyzing transactions on the Defichain-Classic network.
         </Text>
         <VStack spacing={ 1 } mt={ 6 } alignItems="start">
           { apiVersionUrl && (

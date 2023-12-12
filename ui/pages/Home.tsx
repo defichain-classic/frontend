@@ -18,24 +18,9 @@ const Home = () => {
         w="100%"
         background={ config.UI.homepage.plate.background }
         borderRadius="24px"
-        padding={{ base: '24px', lg: '48px' }}
         minW={{ base: 'unset', lg: '900px' }}
         data-label="hero plate"
       >
-        <Flex mb={{ base: 6, lg: 8 }} justifyContent="space-between">
-          <Heading
-            as="h1"
-            size={{ base: 'md', lg: 'xl' }}
-            lineHeight={{ base: '32px', lg: '50px' }}
-            fontWeight={ 600 }
-            color={ config.UI.homepage.plate.textColor }
-          >
-            { config.chain.name } Explorer
-          </Heading>
-          <Box display={{ base: 'none', lg: 'block' }}>
-            { config.features.account.isEnabled && <ProfileMenuDesktop/> }
-          </Box>
-        </Flex>
         <LightMode>
           <SearchBar isHomepage/>
         </LightMode>

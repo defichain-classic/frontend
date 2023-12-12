@@ -54,13 +54,13 @@ const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
     <Box
       as="a"
       href={ route({ pathname: '/' }) }
-      width={{ base: 'auto', lg: isCollapsed === false ? '120px' : '30px', xl: isCollapsed ? '30px' : '120px' }}
-      height={{ base: '24px', lg: isCollapsed === false ? '24px' : '30px', xl: isCollapsed ? '30px' : '24px' }}
+      width={{ base: 'auto', lg: isCollapsed === false ? '100%' : '30px', xl: isCollapsed ? '30px' : '100%' }}
+      height={{ base: '24px', lg: isCollapsed === false ? 'auto' : '30px', xl: isCollapsed ? '30px' : 'auto' }}
       display="inline-flex"
       overflow="hidden"
       onClick={ onClick }
       flexShrink={ 0 }
-      aria-label="Link to main page"
+      aria-label="Go Home"
     >
       { /* big logo */ }
       <Image
