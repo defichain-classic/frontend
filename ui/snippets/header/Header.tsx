@@ -44,10 +44,10 @@ const Header = ({ isHomePage, renderSearchBar }: Props) => {
           <NetworkLogo/>
           { config.features.account.isEnabled ? <ProfileMenuMobile/> : <Box boxSize={ 10 }/> }
         </Flex>
-        { !isHomePage && searchBar }
+        { searchBar }
       </Box>
       <Box display={{ base: 'none', lg: 'block' }}>
-        { !isHomePage && (
+        { (
           <HStack
             as="header"
             width="100%"

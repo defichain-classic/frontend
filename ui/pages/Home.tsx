@@ -14,15 +14,6 @@ import SearchBar from 'ui/snippets/searchBar/SearchBar';
 const Home = () => {
   return (
     <Box as="main">
-      <Box
-        w="100%"
-        background={ config.UI.homepage.plate.background }
-        borderRadius="24px"
-        minW={{ base: 'unset', lg: '900px' }}
-        data-label="hero plate"
-      >
-      <SearchBar isHomepage/>
-      </Box>
       <Stats/>
       <ChainIndicators/>
       <AdBanner mt={{ base: 6, lg: 8 }} mx="auto" display="flex" justifyContent="center"/>
