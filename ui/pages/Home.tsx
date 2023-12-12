@@ -21,9 +21,7 @@ const Home = () => {
         minW={{ base: 'unset', lg: '900px' }}
         data-label="hero plate"
       >
-        <LightMode>
-          <SearchBar isHomepage/>
-        </LightMode>
+      <SearchBar isHomepage/>
       </Box>
       <Stats/>
       <ChainIndicators/>
